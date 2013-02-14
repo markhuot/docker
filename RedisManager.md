@@ -11,7 +11,13 @@ Redis is an open source, advanced key-value store. It is often referred to as a 
 Get a Redis connection instance by name.
 
 ```php
-$redis->connection('prod'); // returns Illuminate\Redis\Database
+$redis->connection('prod');
+```
+
+This is typically called through the static magic method, however.
+
+```php
+Redis::connection('prod');
 ```
 
 

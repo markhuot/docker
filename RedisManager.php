@@ -26,7 +26,13 @@ class RedisManager {
    * Get a Redis connection instance by name.
    *
    * ```php
-   * $redis->connection('prod'); // returns Illuminate\Redis\Database
+   * $redis->connection('prod');
+   * ```
+   *
+   * This is typically called through the static magic method, however.
+   *
+   * ```php
+   * Redis::connection('prod');
    * ```
    */
   public function connection($name = null)
