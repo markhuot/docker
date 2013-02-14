@@ -33,6 +33,11 @@ $redis->set('name', 'Mark');
 $redis->get('name'); // returns 'Mark'
 ```
 
+If anything goes wrong, Redis may return:
+
+* a [CommandException](CommandException.md)
+* a [ConnectionException](ConnectionException.md)
+
 
 ->getConfig($name)
 ----
